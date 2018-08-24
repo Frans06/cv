@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2018.8.22)  23 AUG 2018 01:02
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2018.8.24)  24 AUG 2018 12:00
  restricted \write18 enabled.
 **cv.tex
 (./cv.tex
@@ -211,7 +211,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.044 seconds)
+luaotfload | main : initialization completed in 0.045 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1550,7 +1550,7 @@ luaotfload | load : path lookup of "texgyreheros-regular" unsuccessful, falling
 back to file:
 luaotfload | load : path lookup of "texgyreheros-bold" unsuccessful, falling bac
 k to file:
-Overfull \hbox (16.93416pt too wide) in paragraph at lines 94--94
+Overfull \hbox (21.21394pt too wide) in paragraph at lines 94--94
  [][][]
  []
 
@@ -1678,7 +1678,7 @@ Here is how much of LuaTeX's memory you used:
    22 hlist, 1 vlist, 1 rule, 24 glue, 107 attribute, 44 glue_spec, 87 attribute
 _list, 2 action, 1 write, 39 pdf_literal, 9 pdf_refxform, 18 pdf_colorstack node
 s
-   avail lists: 1:3,2:3019,3:616,4:1601,5:232,6:2253,7:31,8:10,9:417,10:216
+   avail lists: 1:4,2:3019,3:616,4:1605,5:235,6:2264,7:31,8:10,9:417,10:215
  43192 multiletter control sequences out of 65536+600000
  53 fonts using 6152359 bytes
  73i,9n,79p,937b,847s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1686,7 +1686,7 @@ s
 hare/texmf/fonts/opentype/public/tex-gyre/texgyreheros-bold.otf></usr/share/texm
 f/fonts/opentype/public/tex-gyre/texgyreheros-regular.otf></usr/share/fonts/true
 type/lato/Lato-Hairline.ttf>
-Output written on cv.pdf (2 pages, 3802999 bytes).
+Output written on cv.pdf (2 pages, 3803327 bytes).
 
 PDF statistics: 95 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
