@@ -16,6 +16,9 @@
 \usepackage{dtklogos}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
+
+\usepackage{enumitem}
+
 \usetikzlibrary{mindmap,shadows}
 \hypersetup{
     pdftitle={},
@@ -49,6 +52,23 @@
 \addbibresource{bibliography.bib}
 \RequirePackage{xcolor}
 \definecolor{pblue}{HTML}{0395DE}
+
+%------------
+\renewenvironment{entrylist}{%
+  \begin{itemize}[leftmargin=0.9in]%[leftmargin=*,align=left,itemindent=-\dimexpr\labelwidth+\labelindent+\labelsep\relax]
+}{%
+  \end{itemize}
+}
+%\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\renewcommand{\entry}[4]{%
+  \item[#1] 
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=pblue} #3 }\\%
+    #4\vspace{\parsep}%
+  }
+
+%-------
 
 \begin{document}
 \header{Frans }{Ramirez Neyra}
@@ -103,12 +123,35 @@
 ~
 \section{Experience}
 \begin{entrylist}
+  \entry	
+    {09/18 - 02/19}
+    {Fullstack Software Engineer}
+    {Credijuso}
+    {Fintech company that offers financial products using technologies to improve time response, amounts estimations and clients capabilities.\\\vspace{-3mm}
+    \begin{itemize}[label=$•$]
+    \addtolength{\itemindent}{-4mm}
+    	\item Using IaC to generate enviroments with gitlab for our projects.\vspace{1mm}
+    	\item  Add features to Loany an amortization calculator for our financial products that replace normal spreadsheets use by an economist. Made in python with Django framework.\vspace{1mm}
+    	\item Update React components used in our applications in order to be used by dash framework in python.\vspace{1mm}
+    	\item Working with OroCRM and symfony to make a custom CRM for internal processes and business requirements in PHP.\vspace{1mm}
+	\end{itemize}
+    }
+  \entry
+    {09/18 - 02/19}
+    {Fullstack Software Engineer}
+    {NDS Cognitive Labs}
+    {A company that helps companies in their process of digital transformation with cognitive computing solutions.\\\vspace{-3mm}
+    \begin{itemize}[label=$•$]
+    \addtolength{\itemindent}{-4mm}
+    	\item Develop a time series sells forecast. It was used to Predict and anticipate sells integrated to a SugarCRM in order to ganerate sells opportunities. Languages used Python and PHP.\vspace{1mm}
+	\end{itemize}
+    }
   \entry
     {03/17 - 09/18}
     {Software Engineer}
     {Connus International}
     {A company dedicated to the automation, integration and innovation of services, and technologies oriented to the private security sector.\\\vspace{-3mm}
-    \begin{itemize}
+    \begin{itemize}[label=$•$]
     \addtolength{\itemindent}{-4mm}
     	\item Integration of an LPR software solution using C++, training OpenALPR for Mexican plates. The software is working now in all crossings between Mexico and the USA\vspace{1mm}
     	\item Implementation on Python of the AWS face recognition software as a solution for security on communication towers.\vspace{1mm}
@@ -128,7 +171,7 @@
     {Research Intern}
     {McGill University\vspace{1mm}}
     {I Worked with Graduate and Postgraduate students on investigation projects\\\vspace{-3mm}
-        \begin{itemize}
+        \begin{itemize}[label=$•$]
     		\addtolength{\itemindent}{-4mm}
     			\item Electronic and mechanical design of drones with Control Engineering implementation.\vspace{1mm}
     			\item Automatic Maneuvers for Fixed Wings Airplanes research.\vspace{1mm}
@@ -140,7 +183,7 @@
     {ITESM\vspace{1mm}}
     {Investigation in FPGA systems developing digital filters IIR or FIR and controllers. Contrasting and evaluating performance in analogic and digital filters and controllers}
 \end{entrylist}
-\\\vspace{-8mm}
+
 \section{Education}
 \begin{entrylist}
   \entry
@@ -159,7 +202,7 @@
 ~
 \end{aside}
 \section{Projects}
-    \begin{itemize}
+    \begin{itemize}[label=$•$]
     \addtolength{\itemindent}{-4mm}    
       \item Design and construction of a scaled airplane, Aero Design SAE || Time: 6 months\vspace{1mm}
       \item Robot construction for FIRST Robotic Competition || Time: 3 Years\vspace{1mm}
