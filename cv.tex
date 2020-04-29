@@ -28,26 +28,6 @@
     colorlinks=false,           % no lik border color
     allbordercolors=white       % white border color for all
 }
-\smartdiagramset{
-    bubble center node font = \footnotesize,
-    bubble node font = \footnotesize,
-    % specifies the minimum size of the bubble center node
-    bubble center node size = 0.5cm,
-    %  specifies the minimum size of the bubbles
-    bubble node size = 0.5cm,
-    % specifies which is the distance among the bubble center node and the other bubbles
-    distance center/other bubbles = 0.3cm,
-    % sets the distance from the text to the border of the bubble center node
-    distance text center bubble = 0.5cm,
-    % set center bubble color
-    bubble center node color = pblue,
-    % define the list of colors usable in the diagram
-    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
-    % sets the opacity at which the bubbles are shown
-    bubble fill opacity = 0.6,
-    % sets the opacity at which the bubble text is shown
-    bubble text opacity = 0.5,
-}
 
 \addbibresource{bibliography.bib}
 \RequirePackage{xcolor}
@@ -107,35 +87,41 @@
     \href{https://repo.qbo.tech:5443/profile}{repo.qbo.tech/profile}
     \href{https://itesm.academia.edu/FransRamirezNeyra}{itesm.academia.edu/\\FransRamirezNeyra}
     ~
-  \section{Personal Skills}
-	~
-	~
-    \smartdiagram[bubble diagram]{
-        \textbf{Team}\\\textbf{Work},
-        \textbf{Initiative},
-        \textbf{Curiosity},
-        \textbf{Problem}\\\textbf{Solving},
-        \textbf{\vspace{2mm}Self Learner},
-        \textbf{Stamina}
-    }
     ~
 \end{aside}
 ~
 \section{Experience}
 \begin{entrylist}
   \entry	
-    {09/18 - 02/19}
+    {09/19 - Present}
     {Fullstack Software Engineer}
-    {Credijuso}
+    {Chiper}
+    {Retail company that connect shop owners directly with manufacturers and shorten the distribution channel.\\\vspace{-3mm}
+    \begin{itemize}[label=$•$]
+    \addtolength{\itemindent}{-4mm}
+    	\item Develop Retail Management System using Loopback JS, React Js and MySQL in order to manage Inventory for warehouses, products management and ordering system.\vspace{1mm}
+    	\item Develop Operational System using Loopback JS, React JS and MySQL in order to handle internal processes like Piking, select and package products process, Orders Consolidation and Routes and Reception process.\vspace{1mm}
+    	\item Create Bills  Payment Transactional System for POS using Koa Js, Objection, Postgress. INtegrate multiple payment services and services providers.\vspace{1mm}
+	\end{itemize}
+    } 
+  \entry	
+    {03/19 - 09/19}
+    {Fullstack Software Engineer}
+    {Credijusto}
     {Fintech company that offers financial products using technologies to improve time response, amounts estimations and clients capabilities.\\\vspace{-3mm}
     \begin{itemize}[label=$•$]
     \addtolength{\itemindent}{-4mm}
-    	\item Using IaC to generate enviroments with gitlab for our projects.\vspace{1mm}
+    	\item Using IaC to automatically generate enviroments by PR for our projects.\vspace{1mm}
     	\item  Add features to Loany an amortization calculator for our financial products that replace normal spreadsheets use by an economist. Made in python with Django framework.\vspace{1mm}
     	\item Update React components used in our applications in order to be used by dash framework in python.\vspace{1mm}
     	\item Working with OroCRM and symfony to make a custom CRM for internal processes and business requirements in PHP.\vspace{1mm}
 	\end{itemize}
-    }
+    }  
+  \entry
+    {06/18 - Present}
+    {Manager \& ML Developer}
+    {Nure\vspace{1mm}}
+    { Reverse Image Search Engine Development based on a Deep Neuronal Network (VGG-16 \& RESNET) characteristics extraction. Then Vectorizing results and indexing them on Elastic Search to make search fast. I dockerize solution with Nvidia runtime and docker orchestration for autoscaling.\vspace{-2mm}\\}
   \entry
     {09/18 - 02/19}
     {Fullstack Software Engineer}
@@ -161,11 +147,6 @@
 		\item Adaptation of ML technologies (Detectron, Fast-RCNN, YOLO) with Tensor Flow  and Caffe for Object Detection and data harvest and characteristics extraction\vspace{1mm}
 	\end{itemize}
     }
-  \entry
-    {06/18 - Present}
-    {Manager \& Developer}
-    {Nure\vspace{1mm}}
-    {QBO Project - Reverse Image Search Engine Development based on a Convolutional Neuronal Network (VGG-16) characteristics extraction. Then Vectorizing results and indexing them on Elastic Search to make search easy and fast. I dockerize solution with Nvidia runtime and docker orchestration for autoscaling.\vspace{-2mm}\\}
     \entry
     {05/10 - 09/16}
     {Research Intern}
@@ -190,13 +171,14 @@
     {2012 - 2016}
     {Bachelor's Degree in Mechatronic Engineering}
     {ITESM\vspace{1mm}}
-    {Mechatronic Engineering \\\vspace{-2mm}}
+    {Mechatronic Engineering \\\vspace{-4mm}}
   \entry
     {2004, 2009}
     {Technical Degree in Informatics}
     {CEO Manuel T. Calle, Universidad San Luis Gonzaga\vspace{1mm}}
     {Wireless Connections and Internet Infrastructure\\}
-\end{entrylist}
+\end{entrylist} 
+
 \section{Projects}
     \begin{itemize}[label=$•$]
     \addtolength{\itemindent}{-4mm}    
@@ -216,8 +198,8 @@
   \entry
     {12/2016}
     {Excellence Award }
-    {Best GPA on Career Generation}
-    {Awarded by having the best GPA up to 9.5 out of 10}
+    {Mechatronic Engineer}
+    {GPA 3.85}
 \end{entrylist}
 
 \end{document}
