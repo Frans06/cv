@@ -6,12 +6,6 @@
 \usepackage{xcolor}
 \usepackage{smartdiagram}
 \usepackage{fontspec}
-% if you want to add fontawesome package
-% you need to compile the tex file with LuaLaTeX
-% References:
-%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
-%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
-%\usepackage{fontawesome}
 \usepackage{metalogo}
 \usepackage{dtklogos}
 \usepackage[utf8]{inputenc}
@@ -35,7 +29,7 @@
 
 %------------
 \renewenvironment{entrylist}{%
-  \begin{itemize}[leftmargin=0.9in]%[leftmargin=*,align=left,itemindent=-\dimexpr\labelwidth+\labelindent+\labelsep\relax]
+  \begin{itemize}[leftmargin=0.25in,align=left,itemindent=-\dimexpr\labelindent\relax]
 }{%
   \end{itemize}
 }
@@ -44,7 +38,7 @@
   \item[#1] 
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=pblue} #3 }\\%
+    {\footnotesize\textbf{\addfontfeature{Color=pblue} #3 }}\\%
     #4\vspace{\parsep}%
   }
 
@@ -68,8 +62,6 @@
 	~
 	~
 	~
-	~
-	~	
   \section{Address}
     Gutemberg 16
     Anzures, Mexico City
@@ -82,87 +74,106 @@
     \href{mailto:franscaraveli@gmail.com}{\textbf{franscaraveli@}\\gmail.com}
     ~
   \section{Web \& Git}
-    \href{http://fransramirez.hol.es}{franscaraveli.hol.es}
+    \href{http://fransramirez.com}{fransramirez.hol.es}
     \href{https://github.com/Frans06}{github.com/Frans06}
     \href{https://repo.qbo.tech:5443/profile}{repo.qbo.tech/profile}
     \href{https://itesm.academia.edu/FransRamirezNeyra}{itesm.academia.edu/\\FransRamirezNeyra}
-    ~
-    ~
 \end{aside}
-~
+
 \section{Experience}
 \begin{entrylist}
+
+%------- CHIPER --------
+
   \entry	
-    {09/19 - Present}
+    {09/19 - 03/19}
     {Fullstack Software Engineer}
     {Chiper}
-    {Retail company that connect shop owners directly with manufacturers and shorten the distribution channel.\\\vspace{-3mm}
+    {Retail company that connect shop owners directly with manufacturers and shorten the distribution channel.\vspace{-1mm}
     \begin{itemize}[label=$•$]
     \addtolength{\itemindent}{-4mm}
-    	\item Develop Retail Management System using Loopback JS, React Js and MySQL in order to manage Inventory for warehouses, products management and ordering system.\vspace{1mm}
-    	\item Develop Operational System using Loopback JS, React JS and MySQL in order to handle internal processes like Piking, select and package products process, Orders Consolidation and Routes and Reception process.\vspace{1mm}
-    	\item Create Bills  Payment Transactional System for POS using Koa Js, Objection, Postgress. INtegrate multiple payment services and services providers.\vspace{1mm}
+    	\item Develop Retail Management System using Loopback JS, React Js and MySQL in order to manage Inventory for warehouses, products management and ordering system.
+    	\item Develop Operational System using Loopback JS, React JS and MySQL in order to handle internal processes like Piking, select and package products process, Orders Consolidation and Routes and Reception process.
+    	\item Create Bills  Payment Transactional System for POS using Koa Js, Objection, Postgress. INtegrate multiple payment services and services providers.
 	\end{itemize}
     } 
+    
+%------- CREDIJUSTO --------
+
   \entry	
     {03/19 - 09/19}
     {Fullstack Software Engineer}
     {Credijusto}
-    {Fintech company that offers financial products using technologies to improve time response, amounts estimations and clients capabilities.\\\vspace{-3mm}
+    {Fintech company that offers financial products using technologies to improve time response, amounts estimations and clients capabilities.\vspace{-1mm}
     \begin{itemize}[label=$•$]
-    \addtolength{\itemindent}{-4mm}
-    	\item Using IaC to automatically generate enviroments by PR for our projects.\vspace{1mm}
-    	\item  Add features to Loany an amortization calculator for our financial products that replace normal spreadsheets use by an economist. Made in python with Django framework.\vspace{1mm}
-    	\item Update React components used in our applications in order to be used by dash framework in python.\vspace{1mm}
-    	\item Working with OroCRM and symfony to make a custom CRM for internal processes and business requirements in PHP.\vspace{1mm}
+    \addtolength{\itemindent}{-1mm}
+    	\item Using IaC to automatically generate enviroments by PR for our projects.
+    	\item  Add features to Loany an amortization calculator for our financial products that replace normal spreadsheets use by an economist. Made in python with Django framework.
+    	\item Update React components used in our applications in order to be used by dash framework in python.
+    	\item Working with OroCRM and symfony to make a custom CRM for internal processes and business requirements in PHP.
 	\end{itemize}
-    }  
+    } 
+    
+%------- NURE --------
+
   \entry
     {06/18 - Present}
     {Manager \& ML Developer}
     {Nure\vspace{1mm}}
-    { Reverse Image Search Engine Development based on a Deep Neuronal Network (VGG-16 \& RESNET) characteristics extraction. Then Vectorizing results and indexing them on Elastic Search to make search fast. I dockerize solution with Nvidia runtime and docker orchestration for autoscaling.\vspace{-2mm}\\}
+    { Reverse Image Search Engine Development based on a Deep Neuronal Network (VGG-16 \& RESNET) characteristics extraction. Then Vectorizing results and indexing them on Elastic Search to make search fast. I dockerize solution with Nvidia runtime and docker orchestration for autoscaling.\vspace{-1mm}}
+ 
+%------- NDS --------
+
   \entry
     {09/18 - 02/19}
     {Fullstack Software Engineer}
     {NDS Cognitive Labs}
-    {A company that helps companies in their process of digital transformation with cognitive computing solutions.\\\vspace{-3mm}
+    {A company that helps companies in their process of digital transformation with cognitive computing solutions.\vspace{-1mm}
     \begin{itemize}[label=$•$]
     \addtolength{\itemindent}{-4mm}
-    	\item Develop a time series sells forecast. It was used to Predict and anticipate sells integrated to a SugarCRM in order to ganerate sells opportunities. Languages used Python and PHP.\vspace{1mm}
+    	\item Develop a time series sells forecast. It was used to Predict and anticipate sells integrated to a SugarCRM in order to ganerate sells opportunities. Languages used Python and PHP.
 	\end{itemize}
     }
+
+%------- CONNUS --------
+
   \entry
     {03/17 - 09/18}
     {Software Engineer}
     {Connus International}
-    {A company dedicated to the automation, integration and innovation of services, and technologies oriented to the private security sector.\\\vspace{-3mm}
+    {A company dedicated to the automation, integration and innovation of services, and technologies oriented to the private security sector.\vspace{-1mm}
     \begin{itemize}[label=$•$]
     \addtolength{\itemindent}{-4mm}
-    	\item Integration of an LPR software solution using C++, training OpenALPR for Mexican plates. The software is working now in all crossings between Mexico and the USA\vspace{1mm}
-    	\item Implementation on Python of the AWS face recognition software as a solution for security on communication towers.\vspace{1mm}
-    	\item Development of a platform for IoT monitoring using MERN technology. Which works together with an ARM embedded system where python software deploys solutions as face recognition, video surveillance, infrastructure monitoring, and sensor communication.\vspace{1mm}
-		\item Improving prototypes to production development using Docker Staks and Swarms to achieve a better performance and longtime maintenance.\vspace{1mm}
-		\item Improving ARM based devices to make them robust solutions implementing Debugging, Logging and Stress tests.\vspace{1mm}
-		\item Adaptation of ML technologies (Detectron, Fast-RCNN, YOLO) with Tensor Flow  and Caffe for Object Detection and data harvest and characteristics extraction\vspace{1mm}
+    	\item Integration of an LPR software solution using C++, training OpenALPR for Mexican plates. The software is working now in all crossings between Mexico and the USA
+    	\item Implementation on Python of the AWS face recognition software as a solution for security on communication towers.
+    	\item Development of a platform for IoT monitoring using MERN technology. Which works together with an ARM embedded system where python software deploys solutions as face recognition, video surveillance, infrastructure monitoring, and sensor communication.
+		\item Improving prototypes to production development using Docker Staks and Swarms to achieve a better performance and longtime maintenance.
+		\item Improving ARM based devices to make them robust solutions implementing Debugging, Logging and Stress tests.
+		\item Adaptation of ML technologies (Detectron, Fast-RCNN, YOLO) with Tensor Flow  and Caffe for Object Detection and data harvest and characteristics extraction.
 	\end{itemize}
     }
-    \entry
+
+%------- MCGill --------
+   
+  \entry
     {05/10 - 09/16}
     {Research Intern}
     {McGill University\vspace{1mm}}
-    {I Worked with Graduate and Postgraduate students on investigation projects\\\vspace{-3mm}
-        \begin{itemize}[label=$•$]
-    		\addtolength{\itemindent}{-4mm}
-    			\item Electronic and mechanical design of drones with Control Engineering implementation.\vspace{1mm}
-    			\item Automatic Maneuvers for Fixed Wings Airplanes research.\vspace{1mm}
-    	\end{itemize}
+    {I Worked with Graduate and Postgraduate students on investigation projects\vspace{-1mm}
+    \begin{itemize}[label=$•$]
+    \addtolength{\itemindent}{-4mm}
+    	\item Electronic and mechanical design of drones with Control Engineering implementation.
+    	\item Automatic Maneuvers for Fixed Wings Airplanes research.
+    \end{itemize}
     }
+    
+ %------- ITESM --------
+
     \entry
     {09/16 - 12/16}
     {Project Investigator}
     {ITESM\vspace{1mm}}
-    {Investigation in FPGA systems developing digital filters IIR or FIR and controllers. Contrasting and evaluating performance in analogic and digital filters and controllers}
+    {Investigation in FPGA systems developing digital filters IIR or FIR and controllers. Contrasting and evaluating performance in analogic and digital filters and controllers\vspace{-2mm}}
 \end{entrylist}
 
 \section{Education}
@@ -175,18 +186,18 @@
   \entry
     {2004, 2009}
     {Technical Degree in Informatics}
-    {CEO Manuel T. Calle, Universidad San Luis Gonzaga\vspace{1mm}}
-    {Wireless Connections and Internet Infrastructure\\}
+    {CEO Manuel T. \& Universidad de Ica\vspace{1mm}}
+    {Wireless Connections and Internet Infrastructure\vspace{-2mm}}
 \end{entrylist} 
 
 \section{Projects}
     \begin{itemize}[label=$•$]
     \addtolength{\itemindent}{-4mm}    
-      \item Leaf recognition using CNN based on RetinaNet || Time: 3 months\vspace{1mm}
-      \item Design and construction of a scaled airplane, Aero Design SAE || Time: 6 months\vspace{1mm}
-      \item Robot construction for FIRST Robotic Competition || Time: 3 Years\vspace{1mm}
-      \item Development of a line following by camera car for FreeScale Cup || Time: 2 Years\vspace{1mm}
-      \item Investigation in XO computer complement development. || Time: 1 Year\vspace{1mm}
+      \item Leaf recognition using CNN based on RetinaNet || Time: 3 months
+      \item Design and construction of a scaled airplane, Aero Design SAE || Time: 6 months
+      \item Robot construction for FIRST Robotic Competition || Time: 3 Years
+      \item Development of a line following by camera car for FreeScale Cup || Time: 2 Years
+      \item Investigation in XO computer complement development. || Time: 1 Year
     \end{itemize}
 \section{Honors \& Awards}
 \begin{entrylist}
