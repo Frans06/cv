@@ -1,5 +1,8 @@
-cv.pdf
-texput.log
-missfont.log
-cv.log
-cv.log missfont.log texput.log
+/cv.pdf
+/texput.log
+/missfont.log
+/cv.log
+/cv.log
+/missfont.log
+/texput.log
+*.log
